@@ -186,6 +186,115 @@ QRadar ayuda a priorizar y correlacionar la información, permitiendo al analist
 
 
 
+# Creación de una búsqueda de conexiones RDP a su servidor
+
+
+Acceso al módulo de búsqueda
+
+Aquí es posible crear consultas personalizadas con filtros para protocolos, direcciones IP, puertos, etc. ( EN ESTE CASO APLICAMOS EL FILTRO EN BASE A LA IP 
+
+
+<img width="896" height="429" alt="image" src="https://github.com/user-attachments/assets/3f05538e-e60f-4faa-882f-af0197a7b175" />
+
+
+
+Ejecución de la búsqueda
+
+Al ejecutar la búsqueda, QRadar devuelve los flujos/eventos que cumplen los criterios.
+
+Se revisa origen, destino y hora de la conexión para identificar accesos sospechosos.
+
+<img width="793" height="305" alt="image" src="https://github.com/user-attachments/assets/e929ed1f-7cb5-4d47-880b-69b81f1fe3fe" />
+
+( MAS DETALLE DEABAJO )
+
+
+
+# Investigación de un delito de acceso remoto con la aplicación Analyst
+
+Este ejercicio se centra en la aplicación Analyst de QRadar, utilizada para gestionar investigaciones de incidentes de seguridad.
+A diferencia de la vista tradicional de Offenses, aquí se estructura la información en un caso investigativo, con contexto y evidencias asociadas.
+
+
+1. Identificación del incidente
+
+Se recibe una infracción relacionada con acceso remoto sospechoso (RDP).
+
+En lugar de investigarla únicamente desde la pestaña Offenses, se abre el caso en la aplicación Analyst para documentar la investigación.
+
+<img width="847" height="383" alt="image" src="https://github.com/user-attachments/assets/eb5e1b56-1b38-40bf-9125-3e8e8814f5fa" />
+
+
+2. Uso de la aplicación Analyst
+
+Dentro de Analyst App se pueden:
+
+Revisar detalles del incidente (regla que lo disparó, IP origen/destino, hora, etc.).
+
+Asociar eventos y flujos relacionados con la infracción.
+
+Añadir notas o comentarios de análisis.
+
+<img width="830" height="405" alt="image" src="https://github.com/user-attachments/assets/83bec1e0-0192-4e13-8961-839c0f9e18ad" />
+
+
+Esto ayuda a entender si el intento de acceso remoto forma parte de un ataque aislado o de un patrón más amplio.
+
+
+
+Conclusión de la investigación
+
+El uso de la aplicación Analyst permite dar trazabilidad y formalidad a la investigación del incidente.
+
+Un analista SOC puede documentar evidencias, registrar hipótesis y preparar el caso para escalamiento o cierre.
+
+
+
+
+# Creación de una plantilla de informe de acceso remoto
+
+La investigación de incidentes en un SOC no está completa hasta que se genera un informe formal.
+En QRadar, es posible crear plantillas de reportes que reúnen evidencias y gráficos clave para documentar infracciones, apoyar auditorías y facilitar la comunicación entre equipos de seguridad.
+
+
+1. Acceso al módulo de reportes
+
+Desde la pestaña Reports, se crea una nueva plantilla.
+
+Se selecciona el tipo de informe: Acceso remoto sospechoso (RDP).
+
+<img width="858" height="326" alt="image" src="https://github.com/user-attachments/assets/35d5ec5b-38cf-4813-a604-82ef9e83ec77" />
+
+
+2. Configuración de la plantilla
+
+
+v<img width="857" height="397" alt="image" src="https://github.com/user-attachments/assets/38d27454-b2c8-4673-8e8b-4390075a168b" />
+
+
+Reporte que genere
+
+<img width="863" height="392" alt="image" src="https://github.com/user-attachments/assets/8e9be6a0-9a26-49eb-8392-1980ba153ea3" />
+
+
+<img width="881" height="390" alt="image" src="https://github.com/user-attachments/assets/d6eddb15-65a1-4308-8cfa-38e550a66ee1" />
+
+
+<img width="871" height="394" alt="image" src="https://github.com/user-attachments/assets/783d021f-e483-43f5-b5ed-89dd50a2206d" />
+
+
+
+Este laboratorio de IBM QRadar SIEM permitió reforzar habilidades clave en la operación de un SOC, desde la exploración de paneles y gestión de vulnerabilidades, hasta la investigación de incidentes de acceso remoto y la generación de reportes formales.
+
+A través de los ejercicios documentados se demostró la capacidad de:
+
+Detectar y analizar eventos de seguridad (ej. intentos de acceso remoto vía RDP).
+
+Investigar incidentes utilizando diferentes módulos de QRadar (QFlow, Analyst App).
+
+Crear búsquedas personalizadas y reportes que facilitan la comunicación y el cumplimiento de auditorías.
+
+Con este proyecto no solo se obtiene experiencia práctica en el uso de un SIEM empresarial, sino que también se construye evidencia tangible para el desarrollo profesional en ciberseguridad y respuesta a incidentes.
 
 
 
