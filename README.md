@@ -284,6 +284,8 @@ Reporte que genere
 
 
 
+
+
 Este laboratorio de IBM QRadar SIEM permitió reforzar habilidades clave en la operación de un SOC, desde la exploración de paneles y gestión de vulnerabilidades, hasta la investigación de incidentes de acceso remoto y la generación de reportes formales.
 
 A través de los ejercicios documentados se demostró la capacidad de:
