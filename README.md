@@ -135,6 +135,58 @@ El gráfico es útil para correlacionar actividad sospechosa con reglas de detec
 
 
 
+# Investigacion de una infraccion de acceso remoto
+
+Este caso muestra cómo QRadar detecta un intento de acceso remoto mediante RDP desde Internet y cómo un analista SOC realiza el proceso de investigación y triage.
+
+1. Detección de la infracción
+
+En la pestaña Offenses (Infracciones) se genera una alerta con el nombre:
+“Acceso a Escritorio remoto desde Internet – RemoteAccess.MSTerminal Services”.
+
+<img width="565" height="253" alt="image" src="https://github.com/user-attachments/assets/87d4996b-80de-40c5-a565-11a5399b7d35" />
+
+
+2. Revisión de la regla correlacionada
+
+La infracción está basada en una regla predefinida que considera:
+
+Tráfico RDP (3389) desde un origen externo.
+
+Comunicación remota → local.
+
+Bloques de construcción (BB) de Remote Access Violation y Successful Communication
+
+<img width="863" height="388" alt="image" src="https://github.com/user-attachments/assets/45bd5555-1b58-4b2f-ac2f-01ba41aa8151" />
+
+Mas detallado
+
+<img width="868" height="389" alt="image" src="https://github.com/user-attachments/assets/c4dc265e-cc10-4df4-852c-c5747edf91b1" />
+
+
+3. Acciones de la regla
+
+Por defecto la regla:
+
+Agrupa la infracción por IP de origen (atacante).
+
+Genera un evento adicional de acceso remoto.
+
+Opcionalmente, se podrían configurar notificaciones o escaneos.
+
+<img width="891" height="392" alt="image" src="https://github.com/user-attachments/assets/459d7367-e2b3-46ae-a867-86b876008072" />
+
+
+5. Conclusión del análisis
+
+El intento de conexión RDP desde Internet es un indicador claro de acceso remoto no autorizado.
+
+QRadar ayuda a priorizar y correlacionar la información, permitiendo al analista confirmar la amenaza y decidir la acción de respuesta (bloqueo, escaneo forense, escalamiento).
+
+
+
+
+
 
 
 
