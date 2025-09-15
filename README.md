@@ -123,6 +123,10 @@ Ocultamiento selectivo de sesgos para resaltar comportamientos menos frecuentes.
 
 Se investigó un sesgo específico usando la opción View in Network Activity, lo que abre la consulta en la pestaña de Network Activity.
 
+<img width="872" height="398" alt="image" src="https://github.com/user-attachments/assets/fa08dbbe-d190-453e-a730-be0d695434e3" />
+
+
+
 Observaciones
 
 Los sesgos de flujo inusuales pueden indicar configuraciones incorrectas de la red o incluso una brecha de seguridad.
