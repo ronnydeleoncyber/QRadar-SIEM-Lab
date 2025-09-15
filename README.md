@@ -1,4 +1,8 @@
 # QRadar-SIEM-Lab
+
+Este proyecto documenta un laboratorio práctico con IBM QRadar SIEM, donde se exploran funciones clave como detección de amenazas, investigación de incidentes de acceso remoto y generación de reportes. Su objetivo es demostrar experiencia práctica en la operación de un SOC utilizando una de las soluciones SIEM líderes del mercado.
+
+
 <img width="862" height="431" alt="Captura de pantalla 2025-09-12 133614" src="https://github.com/user-attachments/assets/7181d986-1976-4c7e-a5d5-b5ec1ca70596" />
 
 # Introduccion
